@@ -84,10 +84,18 @@
 
 /**
  * @swagger
+ * tags:
+ *   name: Books
+ *   description: The books managing API
+ */
+
+/**
+ * @swagger
  * /book:
  *  get:
  *    summary: Hamma kitoblarni olib kelish
  *    description: Get All Books
+ *    tags: [Books]
  *    responses:
  *      200:
  *        desription: SuccesFull get books
@@ -106,6 +114,7 @@
  *    post:
  *      summary: Add book Database
  *      description: Kitob qo'shish
+ *      tags: [Books]
  *      requestBody:
  *       required: true
  *       content:
@@ -130,6 +139,7 @@
  *  /book/{id}:
  *    get:
  *      summary: Get One Book
+ *      tags: [Books]
  *      description: Bitta Kitobni idsi bilan olish
  *      parameters:
  *       - in: path
@@ -154,6 +164,7 @@
  *  /book/{id}:
  *    patch:
  *      summary: Get One Book
+ *      tags: [Books]
  *      description: Bitta Kitobni idsi bilan olish
  *      requestBody:
  *       required: true
@@ -184,6 +195,7 @@
  *  /book/{id}:
  *    delete:
  *      summary: Delete One Book
+ *      tags: [Books]
  *      description: Bitta Kitobni idsi orqali o'chirish
  *      parameters:
  *       - in: path
